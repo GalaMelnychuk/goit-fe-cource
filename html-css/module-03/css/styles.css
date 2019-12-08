@@ -1,0 +1,35 @@
+body {
+    font-family: "Playfair Display", "Arial", sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;   
+}
+
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+    /* line-height: смотрим в фоторошопе значение ВЫСОТА; */
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.article-item {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    line-height: 17px;
+     /* line-height: смотрим в фоторошопе значение AUTO. соответсвенно: 14 умножаем на 1,2, округляем, получаем 17; */
+}
+
+.article-title {
+    font-size: 30px;
+    line-height: 36px;
+       /* line-height: 30 множим на 1,2; */
+}
+
+button {
+    font-size: 20px;
+}
