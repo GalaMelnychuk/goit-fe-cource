@@ -36,12 +36,11 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
+}
 
 .container {
     width: 901px;
     margin: 0 auto;
-    background-color: rosybrown;
 }
 
 /* HEADER NAVIGATION */
@@ -53,7 +52,6 @@ img {
     text-align: center;
     vertical-align: middle;
     width: 572px;
-    background-color: royalblue;
 }
 
 .links {
@@ -74,39 +72,22 @@ img {
 
 .site-navigation li {
     display: inline-block;
-    /* margin-right: 90px; */
-    /* margin выставила средний из тех, которые указаны в макете, в макете разные значения  */
+    margin-top: 123px;
+    margin-bottom: 137px;
+    /* смотрю в фотошопе верхний нижний отступ, корректирую на 1,5 пикселя */
 }
-/* правый и левый margin у первого и последнего элемента списка высчитывала так: 901 -(90*3) =315/2=156 */
-/* .site-navigation li:last-child {
-    margin-right: 156px;
-}
-
-.site-navigation li:first-child {
-    margin-left: 156px; */
 
 .site-navigation li:not(:last-child) {
     margin-right: 90px;
+    /* указан средний маржин между элементами, так как в макете маржины разные */
 }
-
-
-
-/* .site-navigation li:not(:last-child) {
-    margin-right: 30px;
-}
-
-.site-navigation li:last-child {
-    margin-right: 90px;
-}
-
-.site-navigation li:first-child {
-    margin-left: 90px; */
-
 
 /* ARTICLES */
 .articles {
     list-style: none;
     font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .article-item {
@@ -131,12 +112,14 @@ img {
 }
 
 .article-section {
-    margin: 0;
-    padding: 0;
     width: 420px;
     display: inline-block;
     font-size: 14px;
-    /* margin-right: 61px; */
+    margin-right: 61px;
+}
+
+.article-section:nth-child(2n) {
+    margin-right: 0;
 }
 
 
@@ -144,4 +127,7 @@ img {
     font-size: 20px;
     color: #626262;
     background: none;
+    width: 164px;
+    height: 60px;
+    text-align: center;
 }
