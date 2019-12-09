@@ -1,23 +1,117 @@
+/* ИЗМЕНЕНИЕ МОДЕЛИ РАССЧЕТА */
+html{
+    box-sizing:border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+/* прячем заголовок */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+
 body {
     font-family: "Playfair Display", "Arial", sans-serif;
     color: #626262;
     font-size: 14px;
-    line-height: 24px;   
+    line-height: 24px;
+    margin: 0;   
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+.container {
+    width: 901px;
+    margin: 0 auto;
+    background-color: rosybrown;
+}
+
+/* HEADER NAVIGATION */
+.site-navigation {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 572px;
+    background-color: royalblue;
+}
+
+.links {
+    text-align: center;
 }
 
 .site-navigation a {
     text-transform: uppercase;
     text-decoration: none;
     color: #626262;
-    /* line-height: смотрим в фоторошопе значение ВЫСОТА; */
+    /* line-height: смотрим в фоторошопе значение ВЫСОТА; она у нас 24. Так как в body указано уже 24, то не пишем ничего */
 }
 
-.site-navigation {
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: red;
+}
+
+.site-navigation li {
+    display: inline-block;
+    /* margin-right: 90px; */
+    /* margin выставила средний из тех, которые указаны в макете, в макете разные значения  */
+}
+/* правый и левый margin у первого и последнего элемента списка высчитывала так: 901 -(90*3) =315/2=156 */
+/* .site-navigation li:last-child {
+    margin-right: 156px;
+}
+
+.site-navigation li:first-child {
+    margin-left: 156px; */
+
+.site-navigation li:not(:last-child) {
+    margin-right: 90px;
+}
+
+
+
+/* .site-navigation li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.site-navigation li:last-child {
+    margin-right: 90px;
+}
+
+.site-navigation li:first-child {
+    margin-left: 90px; */
+
+
+/* ARTICLES */
+.articles {
     list-style: none;
+    font-size: 0;
 }
 
 .article-item {
     font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 14px;
     color: #b4ad9e;
     text-transform: uppercase;
     line-height: 17px;
@@ -27,9 +121,27 @@ body {
 .article-title {
     font-size: 30px;
     line-height: 36px;
-       /* line-height: 30 множим на 1,2; */
+    /* line-height: 30 множим на 1,2; */
+    margin-bottom: 31px;
+    /* margin-bottom = (30*1,2) - 30 =6.
+    6/2 = 3 
+    (14*1,2) - 14 = 3.
+    3/2 = 1.5
+    margin bottom = 36 - 4.5 = 31 */
 }
 
-button {
+.article-section {
+    margin: 0;
+    padding: 0;
+    width: 420px;
+    display: inline-block;
+    font-size: 14px;
+    /* margin-right: 61px; */
+}
+
+
+.load-more {
     font-size: 20px;
+    color: #626262;
+    background: none;
 }
