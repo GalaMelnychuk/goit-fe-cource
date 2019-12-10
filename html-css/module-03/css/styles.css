@@ -42,6 +42,7 @@ img {
 .container {
     width: 900px;
     margin: 0 auto;
+    font-size: 0;
 }
 
 /* HEADER NAVIGATION */
@@ -125,7 +126,7 @@ img {
 .article-section {
     width: 420px;
     display: inline-block;
-    font-size: 14px;
+    font-size: 0px;
     margin: 0;
     padding: 0;
     margin-right: 60px;
@@ -133,6 +134,12 @@ img {
 
 .article-section:nth-child(2n) {
     margin-right: 0;
+}
+
+.article-content {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
 }
 
 .load-more-button {
@@ -154,3 +161,6 @@ img {
 .load-more-button:focus {
     color: black;
 }
+
+/* * {
+    outline: 1px solid red; */
