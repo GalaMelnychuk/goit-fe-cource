@@ -128,10 +128,14 @@ img {
     display: inline-block;
     font-size: 0px;
     margin: 0;
+    margin-bottom: 136px;
     padding: 0;
     margin-right: 60px;
 }
 
+    .article-section:nth-last-child(-n + 2) {
+        margin-bottom: 58px;
+}
 .article-section:nth-child(2n) {
     margin-right: 0;
 }
@@ -154,7 +158,9 @@ img {
     height: 60px;
     text-align: center;
     cursor: pointer;
-    margin: 57px 360px 70px 380px;
+    margin-right: 380px;
+    margin-left: 360px;
+    margin-bottom: 70px;
 }
 
 .load-more-button:hover,
@@ -162,5 +168,5 @@ img {
     color: black;
 }
 
-/* * {
-    outline: 1px solid red; */
+* {
+    outline: 1px solid red;
