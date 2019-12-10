@@ -133,7 +133,7 @@ img {
     margin-right: 60px;
 }
 
-    .article-section:nth-last-child(-n + 2) {
+.article-section:nth-last-child(-n + 2) {
         margin-bottom: 58px;
 }
 .article-section:nth-child(2n) {
