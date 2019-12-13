@@ -25,16 +25,13 @@ input[type="radio"].visually-hidden {
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
     font-family: "Roboto", "Open Sans""Arial", sans-serif;
     color: #515151;
-    font-size: 14px;
-    line-height: 24px;
     margin: 0;
-    /* width: 1600px; */
 }
 
 .container {
@@ -65,14 +62,16 @@ img {
     padding-top: 36px;
 }
 
+.site-menu {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .site-navigation {
     list-style: none;
     float: right;
     margin: 0;
     padding: 0;
-    width: 800px;
-    /* с размерами явно что-то не так... подскажите, пжл, что?? ширину подобрала, чтобы не перескакивали вниз */
-    background-color:
 }
 
 .site-navigation li {
@@ -117,8 +116,8 @@ h1 {
 .title {
     font-family: Roboto;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 32px;
+    font-size: 36px;
+    line-height: 44px;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
@@ -144,6 +143,8 @@ h1 {
     font-size: 0;
     padding: 0;
     margin: 0;
+    float: right;
+    padding: 30px;
 }
 
 .item-title {
@@ -159,15 +160,6 @@ h1 {
 
 .shop-items li {
     float: left;
-}
-
-.shop-items {
-    float: right;
-    padding: 30px;
-    
-}
-
-.shop-items li {
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -176,20 +168,117 @@ h1 {
     margin-right: 0px;
 }
 
+.link-item:hover,
+.link-item:focus {
+    color: #1abc9c
+}
+
+.link-item {
+    text-decoration: none;
+}
+
+/* СТАТЬИ */
+.articles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.articles {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    /* margin-bottom: 60px; */
+}
+.articles::after {
+    content: "__________";
+    color: #1abc9c;
+    /* width: 166px;
+    height: 7px; */
+    font-size: 38px;
+    line-height: 32px;
+    display: block;
+    text-align: center;
+}
+
+.article-title {
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 28px;
+}
+
+.article-title::after {
+    content: "__________";
+    color: #1abc9c;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.article-content {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.articles-list li {
+    float: left;
+    margin-right: 30px;
+    /* margin-bottom: 30px; */
+    width: 350px;
+}
+
+.articles-list li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.articles-list {
+    float: right;
+    padding: 30px;
+    margin: 0;
+}
+
+/* КНОПКА */
+.button {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    font-family: "Open Sans";
+    text-align: center;
+    cursor: pointer; 
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: transparent;
+    display: inline-block;
+    margin: 0;
+    width: 350px;
+    padding: 18px 40px;
+}
 
 
 
-
-
-
-
-
-.item-5 ::before {
+/* .item-5 ::before {
     content: '';
     width: 100%;
     height: 100%;
     left: 0;
-    top: 0;
+    top: 0; */
     /* position: absolute; */
     background-image: url("../img/catalog/background-1.jpg");
     /* background-color: rgba( 255, 0, 0, 0.5); */
