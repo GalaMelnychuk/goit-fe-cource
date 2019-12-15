@@ -156,8 +156,17 @@ h1 {
     margin-right: 0px;
 }
 
+.item-5 {
+    background-image: url(../img/catalog/background-1.jpg);
+    width: 254px;
+    height: 282px;
+}
+
 .item-atributes {
-    background-image: url(../img/catalog/backgroung-2.jpg);
+    background-color: #323232;
+    /* background-image: url(../img/catalog/backgroung-2.jpg); */
+    margin: 0;
+    padding: 12px;
 }
 
 .item-price,
@@ -182,13 +191,13 @@ h1 {
 float: right;
 }
 
+.link-item {
+    text-decoration: none;
+}
+
 .link-item:hover,
 .link-item:focus {
     color: #1abc9c
-}
-
-.link-item {
-    text-decoration: none;
 }
 
 /* СТАТЬИ */
