@@ -61,7 +61,6 @@ img {
     padding: 0;
     margin: 0;
     display: block;
-    float: left;
 }
 
 .site-navigation {
@@ -153,7 +152,7 @@ img {
 .item-price,
 .item-title {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 18px;
     font-family: "Roboto";
     line-height: 32px;
     font-weight: 700;
@@ -178,7 +177,7 @@ float: left;
 margin: 0;
 height: 40px;
 width: 49px;
-background-color: rgba(50, 50, 50, .5);
+background-color: #818181;
 padding-top: 6px;
 }
 
@@ -207,7 +206,6 @@ padding-top: 6px;
     float: left;
     margin-right: 30px;
     width: 350px;
-    margin-bottom: 80px;
 }
 
 .article-title {
@@ -215,7 +213,11 @@ padding-top: 6px;
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
-    margin-top: 17px;
+    margin-bottom: 26px;
+}
+
+.article-img {
+    margin-bottom: 13px;
 }
 
 .article-title::after {
@@ -224,7 +226,8 @@ padding-top: 6px;
     width: 136px;
     height: 4px;
     display: block;
-    margin: 12px 0 26px;
+    margin: 0;
+    margin-top: 12px;
 }
 
 .article-content {
@@ -234,6 +237,7 @@ padding-top: 6px;
     font-weight: 400;
     padding: 0;
     margin: 0;
+    margin-bottom: 14px;
 }
 
 .articles-list li:nth-child(3n) {
@@ -252,6 +256,17 @@ padding-top: 6px;
     text-align: center;
     color: #ffffff;
     border-radius: 4px;
-    margin-top: 20px;
     display: inline-block;
 }
+
+.Rectangle_52 {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.439;
+    position: absolute;
+    left: 463px;
+    top: 611px;
+    width: 54px;
+    height: 40px;
+    z-index: 48;
+  }
+  
