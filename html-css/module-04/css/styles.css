@@ -1,4 +1,3 @@
-/* ИЗМЕНЕНИЕ МОДЕЛИ РАССЧЕТА */
 html {
     box-sizing: border-box;
 }
@@ -6,7 +5,9 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -24,18 +25,17 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-/* * {
-    outline: 1px solid red;
-} */
+* {
+    /* outline: 1px solid red; */
+}
 
 body {
-    font-family: "Roboto", "Open Sans""Arial", sans-serif;
     color: #515151;
     margin: 0;
 }
 
 .container {
-    width: 1170px;
+    width: 1110px;
     margin: 0 auto;
     padding: 0;
 }
@@ -49,22 +49,23 @@ img {
 /* HEADER */
 
 .page-header {
-    /* padding-top: 40px; */
-    /* padding-bottom: 105px; */
+    padding-top: 36px;
+    padding-bottom: 164px;
     font-size: 0;
     margin: 0;
 }
 
-.logo {
-    float: left;
+.site-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 14px;
+    color: black;
     padding: 0;
-    margin-bottom: 104px;
-    padding-top: 36px;
-}
-
-.site-menu {
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: 0;
+    display: block;
+    float: left;
 }
 
 .site-navigation {
@@ -72,27 +73,31 @@ img {
     float: right;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .site-navigation li {
     float: left;
-    padding-top: 42px;
 }
 
 .site-navigation li:not(:last-child) {
     margin-right: 34px;
 }
 
-.site-navigation a {
+.logo {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-size: 14px;
-    color: black;
-    line-height: 12px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 30px;
+    color: #515151;
     padding: 0;
     margin: 0;
+    float: left;
+}
+
+.logo::first-letter {
+    color: #1abc9c;
 }
 
 .site-navigation a:hover,
@@ -106,44 +111,33 @@ img {
     clear: both;
 }
 
-/* НАЗВАНИЕ */
-h1 {
-    font-size: 0px;
-    margin: 0;
-    padding: 0;
-}
 
-.title {
+.titles {
     font-family: Roboto;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 48px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 92px;
 }
 
-.title::after {
-    content: "__________";
-    color: #1abc9c;
-    /* width: 166px;
-    height: 7px; */
-    font-size: 38px;
-    line-height: 32px;
-    display: block;
+.titles::after {
+    content: "";
+    background-color: #1abc9c;
+    width: 164px;
+    height: 8px;
     text-align: center;
+    display: block;
+    margin: 34px auto 0;
 }
 
-/* СПИСОК ТОВАРОВ */
+/* shop-items */
 
 .shop-items-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
     float: right;
-    padding: 30px;
+    font-size: 0;
 }
 
 .shop-items-list li {
@@ -152,89 +146,89 @@ h1 {
     margin-bottom: 30px;
 }
 
+.shop-items-list li:nth-last-child(-n + 4) {
+    margin-bottom: 0px;
+}
+
 .shop-items-list li:nth-child(4n) {
     margin-right: 0px;
 }
 
-.item-atributes {
-    background-color: #323232;
-    margin: 0;
-    padding: 12px;
-}
-
 .item-price,
-.item-currency,
 .item-title {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 10px;
     font-family: "Roboto";
     line-height: 32px;
-    padding: 0;
-    margin: 0;
     font-weight: 700;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
 }
 
 .item-title {
     float: left;
+    margin: 0;
+    width: 206px;
+    height: 40px;
+    padding-left: 14px;
+    padding-top: 6px;
+    background-color: #323232;
 }
 
-.item-price,
-.item-currency {
-float: right;
+.item-price{
+float: left;
+margin: 0;
+height: 40px;
+width: 49px;
+background-color: rgba(50, 50, 50, .5);
+padding-top: 6px;
 }
 
-.shop-item:hover .item-atributes {
+.shop-link {
+    display: block;
+}
+
+.shop-link:hover .item-title,
+.shop-link:hover .item-price {
     background-color: #1abc9c
 }
 
-/* СТАТЬИ */
+.shop {
+    margin-bottom: 98px;
+}
+/* articles */
+
 .articles-list {
+    float: right;
+    margin: 0;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.articles {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    /* margin-bottom: 60px; */
-}
-.articles::after {
-    content: "__________";
-    color: #1abc9c;
-    /* width: 166px;
-    height: 7px; */
-    font-size: 38px;
-    line-height: 32px;
-    display: block;
-    text-align: center;
+.articles-list li {
+    float: left;
+    margin-right: 30px;
+    width: 350px;
+    margin-bottom: 80px;
 }
 
 .article-title {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
-    padding: 0;
-    margin-bottom: 28px;
+    margin-top: 17px;
 }
 
 .article-title::after {
-    content: "__________";
-    color: #1abc9c;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    padding: 0;
-    margin: 0;
+    content: "";
+    background-color: #1abc9c;
+    width: 136px;
+    height: 4px;
     display: block;
+    margin: 12px 0 26px;
 }
 
 .article-content {
@@ -244,40 +238,24 @@ float: right;
     font-weight: 400;
     padding: 0;
     margin: 0;
-    margin-bottom: 18px;
-}
-
-.articles-list li {
-    float: left;
-    margin-right: 30px;
-    /* margin-bottom: 30px; */
-    width: 350px;
 }
 
 .articles-list li:nth-child(3n) {
     margin-right: 0px;
 }
 
-.articles-list {
-    float: right;
-    padding: 30px;
-    margin: 0;
-}
-
-/* КНОПКА */
-.button {
-    margin: 0;
+.article-item a {
+    list-style: none;
+    text-decoration: none;
+    background-color: rgba(26, 188, 156);
+    padding: 15px 44px;
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
     font-family: "Open Sans";
     text-align: center;
-    cursor: pointer; 
-    background-color: #1abc9c;
     color: #ffffff;
-    border: transparent;
+    border-radius: 4px;
+    margin-top: 20px;
     display: inline-block;
-    margin: 0;
-    width: 350px;
-    padding: 18px 40px;
 }
