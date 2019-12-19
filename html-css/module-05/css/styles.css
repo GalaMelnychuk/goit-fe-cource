@@ -114,7 +114,7 @@ img {
     position: relative;
 }
 
-.slider-box{
+.slider-box {
     margin: 0 auto;
     position: relative;
     width: 100%;
@@ -345,13 +345,14 @@ img {
     margin-bottom: 0;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #323232;
     font-family: "Open Sans";
     font-size: 14px;
     line-height: 32px;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     font-weight: 400;
+    padding-left: 58px;
+    border: none;
 }
 
 .icon-backet::before {
@@ -362,7 +363,10 @@ img {
     height: 28px;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0;
+    /* margin: 0; */
+    position: absolute;
+    top: 63%;
+    left: 12px;
 }
 
 .overlay-list {
@@ -393,5 +397,5 @@ img {
     font-family: "Open Sans";
     font-size: 16px;
     line-height: 28px;
-    color: #46bfa9;   
+    color: #46bfa9;
 }
