@@ -57,7 +57,9 @@ img {
     font-family: "Open Sans";
     font-weight: 800;
     font-size: 14px;
-    color: #0f0101;
+    color: rgb(15, 1, 1);
+    color: rgb(15, 1, 1);
+
     padding: 0;
     margin: 0;
     display: block;
@@ -94,6 +96,7 @@ img {
 
 .logo::first-letter {
     color: #1abc9c;
+    font-weight: 700;
 }
 
 .site-navigation a:hover,
@@ -159,9 +162,6 @@ img {
 
 .slider-btns-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 1110px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -236,24 +236,22 @@ img {
 }
 
 .product-item {
+    width: 256px;
     float: left;
 }
 
 .product-attributes {
-    width: 256px;
-    height: 40px;
     text-transform: uppercase;
     font-size: 18px;
     font-family: "Roboto";
-    line-height: 32px;
     font-weight: 700;
     color: #ffffff;
-    background-color: #323232;
+    background-color: rgb(50, 50, 50);
 }
 
 .product-name {
     float: left;
-    padding: 4px 12px;
+    padding: 12px 14px 13px;
 }
 
 .product-name-link {
@@ -261,16 +259,14 @@ img {
     color: #ffffff;
     font-size: 18px;
     font-family: "Roboto";
-    line-height: 32px;
     font-weight: 700;
 }
 
 .product-price {
     width: 54px;
-    height: 41px;
     float: right;
     background-color: rgba(255, 255, 255, .44);
-    padding: 4px 12px;
+    padding: 14px;
 }
 
 .product-item:hover .product-attributes {
@@ -295,7 +291,6 @@ img {
 
 .overlay-list {
     width: 166px;
-    height: 108px;
     list-style: none;
     float: left;
     position: absolute;
