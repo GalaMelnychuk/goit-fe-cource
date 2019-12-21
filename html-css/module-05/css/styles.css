@@ -297,9 +297,24 @@ img {
     transform: translate(-50%, -50%);
 }
 
+.overlay-list-item {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.overlay-list-item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.overlay-list-item:nth-child(3) {
+    margin-right: 0;
+}
+
+
 .overlay-list-item-link {
     display: block;
-    float: left;
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
@@ -307,8 +322,6 @@ img {
     background-color: transparent;
     cursor: pointer;
     border: 1px solid #ffffff;
-    margin-right: 8px;
-    margin-bottom: 8px;
     text-decoration: none;
 }
 
@@ -326,13 +339,11 @@ img {
 
 .icon-clock {
     background-image: url(../img/icons/clock.png);
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .icon-basket {
     width: 166px;
-    margin-right: 0;
-    margin-bottom: 0;
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Open Sans";
