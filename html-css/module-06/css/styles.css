@@ -235,12 +235,12 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(
-    to top,
-    rgba(252, 227, 138, 0.9),
-    rgba(243, 129, 129, 0.9));
+    background-image: linear-gradient(to top,
+            rgba(252, 227, 138, 0.9),
+            rgba(243, 129, 129, 0.9));
     visibility: hidden;
-    transition: 0.3s linear;
+    transition: transform 0.3s ease-in,
+                box-shadow 0.3s ease-in;
 }
 
 .overlay-social {
@@ -259,15 +259,16 @@ img {
     text-align: center;
     background-color: rgb(252, 227, 138);
     background-position: center;
+    transition: background-color 0.3s linear;
 }
 
 .overlay-list-item-link:hover {
     background-color: #95e1d3;
 }
 
-.team-list-item:hover .overlay-wrapper{
+.team-list-item:hover .overlay-wrapper {
     visibility: visible;
-    box-shadow: 10px 10px 0 0 #95e1d3;
+    box-shadow: 10px 10px 0 #95e1d3;
     transform: translate(-10px, -10px);
 }
 
@@ -288,11 +289,6 @@ img {
     background-image: url(../img/social-icons/twitter.png);
 }
 
-
-
-
-
-
 .team-list-item-name {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -310,11 +306,6 @@ img {
     color: #999999;
     font-style: italic;
 }
-
-
-
-
-
 
 /* footer */
 
@@ -369,4 +360,3 @@ img {
     font-weight: 700;
     padding: 15px 32px;
 }
-
