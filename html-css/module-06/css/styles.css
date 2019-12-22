@@ -56,6 +56,7 @@ img {
 .site-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .site-navigation {
@@ -91,8 +92,6 @@ img {
     font-weight: 700;
     font-size: 30px;
     color: #95e1d3;
-    padding: 0;
-    margin: 0;
     display: block;
 }
 
@@ -194,7 +193,7 @@ img {
 .digital {
     background-image: url(../img/icons/digital.png);
 }
-    
+
 /* section-team */
 
 .team {
@@ -223,6 +222,77 @@ img {
     text-align: center;
 }
 
+.team-list-item-overlay {
+    position: relative;
+}
+
+.overlay-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9));
+    visibility: hidden;
+    transition: 0.3s linear;
+}
+
+.overlay-social {
+    list-style: none;
+    width: 226px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay-list-item-link {
+    display: block;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 56px;
+    text-align: center;
+    background-color: rgb(252, 227, 138);
+    background-position: center;
+}
+
+.overlay-list-item-link:hover {
+    background-color: #95e1d3;
+}
+
+.team-list-item:hover .overlay-wrapper{
+    visibility: visible;
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    transform: translate(-10px, -10px);
+}
+
+.icon-facebook {
+    background-image: url(../img/social-icons/facebook.png);
+}
+
+.icon-instagram {
+    background-image: url(../img/social-icons/instagram.png);
+
+}
+
+.icon-pinterest {
+    background-image: url(../img/social-icons/pinterest.png);
+}
+
+.icon-twitter {
+    background-image: url(../img/social-icons/twitter.png);
+}
+
+
+
+
+
+
 .team-list-item-name {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -241,11 +311,17 @@ img {
     font-style: italic;
 }
 
+
+
+
+
+
 /* footer */
 
 .page-footer {
     padding: 10px 0 12px;
 }
+
 .copyright-link {
     text-decoration: none;
     cursor: pointer;
@@ -291,6 +367,6 @@ img {
     font-family: "Montserrat";
     font-size: 14px;
     font-weight: 700;
-    padding: 15px 32px ;
+    padding: 15px 32px;
 }
 
