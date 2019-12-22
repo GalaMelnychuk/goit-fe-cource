@@ -241,3 +241,56 @@ img {
     font-style: italic;
 }
 
+/* footer */
+
+.page-footer {
+    padding: 10px 0 12px;
+}
+.copyright-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #f38181;
+}
+
+.page-footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-email {
+    margin: 0;
+    width: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-email-placeholder {
+    color: #cccccc;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    padding: 13px 10px;
+    margin: 0;
+    width: 230px;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+}
+
+.btn-subscribe {
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #95e1d3;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 32px ;
+}
+
