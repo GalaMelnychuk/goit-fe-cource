@@ -239,6 +239,7 @@ img {
             rgba(252, 227, 138, 0.9),
             rgba(243, 129, 129, 0.9));
     visibility: hidden;
+    opacity: 0;
     transition: transform 0.3s ease-in,
                 box-shadow 0.3s ease-in,
                 visibility 0.3s linear;
@@ -271,6 +272,7 @@ img {
     visibility: visible;
     box-shadow: 10px 10px 0 #95e1d3;
     transform: translate(-10px, -10px);
+    opacity: 1;
 }
 
 .icon-facebook {
