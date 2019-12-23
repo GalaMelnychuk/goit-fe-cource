@@ -241,8 +241,8 @@ img {
     visibility: hidden;
     opacity: 0;
     transition: transform 200ms linear,
-                box-shadow 200ms linear,
-                visibility 200ms linear;
+        box-shadow 200ms linear,
+        visibility 200ms linear;
 }
 
 .overlay-social {
@@ -339,12 +339,15 @@ img {
     align-items: center;
 }
 
-.contact-email-placeholder {
+.contact-email-placeholder::placeholder {
     color: #cccccc;
     font-family: "Roboto";
     font-weight: 300;
     font-size: 15px;
     font-style: italic;
+}
+
+.contact-email-placeholder {
     padding: 13px 10px;
     margin: 0;
     width: 230px;
