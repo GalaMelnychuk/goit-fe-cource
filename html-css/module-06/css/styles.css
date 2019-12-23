@@ -200,6 +200,10 @@ img {
     margin-bottom: 86px;
 }
 
+.team-member-img {
+    transition: 200ms linear;
+}
+
 .team-desc {
     font-family: "Roboto";
     font-size: 15px;
@@ -207,8 +211,8 @@ img {
     font-weight: 400;
     color: #999999;
     text-align: center;
-    margin-bottom: 94px;
-    margin-top: 46px;
+    margin: 46px auto 94px;
+    width: 80%;
 }
 
 .team-section {
@@ -224,6 +228,7 @@ img {
 
 .team-list-item-overlay {
     position: relative;
+    transition: 200ms linear;
 }
 
 .overlay-wrapper {
@@ -273,6 +278,9 @@ img {
     box-shadow: 10px 10px 0 0 #95e1d3;
     transform: translate(-10px, -10px);
     opacity: 1;
+}
+.team-list-item:hover .team-member-img{
+    transform: translate(-10px, -10px);
 }
 
 .icon-facebook {
