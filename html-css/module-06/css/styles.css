@@ -240,9 +240,9 @@ img {
             rgba(243, 129, 129, 0.9));
     visibility: hidden;
     opacity: 0;
-    transition: transform 0.3s ease-in,
-                box-shadow 0.3s ease-in,
-                visibility 0.3s linear;
+    transition: transform 200ms linear,
+                box-shadow 200ms linear,
+                visibility 200ms linear;
 }
 
 .overlay-social {
@@ -261,7 +261,7 @@ img {
     text-align: center;
     background-color: rgb(252, 227, 138);
     background-position: center;
-    transition: background-color 0.3s linear;
+    transition: background-color 200ms linear;
 }
 
 .overlay-list-item-link:hover {
@@ -270,7 +270,7 @@ img {
 
 .team-list-item:hover .overlay-wrapper {
     visibility: visible;
-    box-shadow: 10px 10px 0 #95e1d3;
+    box-shadow: 10px 10px 0 0 #95e1d3;
     transform: translate(-10px, -10px);
     opacity: 1;
 }
