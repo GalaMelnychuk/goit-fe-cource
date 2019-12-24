@@ -196,15 +196,15 @@ ol {
 }
 
 .commerce::before {
-    background-image: url(../img/Icon-Basket.png);
+    background-image: url(../img/icons/Icon-Basket.png);
 }
 
 .responsive::before {
-    background-image: url(../img/Icon-Laptop.png);
+    background-image: url(../img/icons/Icon-Laptop.png);
 }
 
 .security::before {
-    background-image: url(../img/Icon-Locked.png);
+    background-image: url(../img/icons/Icon-Locked.png);
 }
 
 /* form----------------------------------------------- */
@@ -216,7 +216,6 @@ ol {
     background-repeat: no-repeat;
     background-position: right;
     background-image: url(../img/back-graund/background_map.png);
-    /* opacity: 0.7; */
 }
 
 .section-form-title {
@@ -229,7 +228,7 @@ ol {
 }
 
 .contact-form {
-    /* width: 940px; */
+    width: 940px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -257,6 +256,10 @@ ol {
     font-weight: 700;
 }
 
+.contact-form-input::after {
+    content: "*";
+    color: #ff0000;
+}
 
 .contact-textarea {
     width: 456px;
