@@ -53,9 +53,9 @@ html {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    margin: -0.0625rem;
     border: 0;
     padding: 0;
     white-space: nowrap;
@@ -69,7 +69,7 @@ body {
 }
 
 .container {
-    width: 58.75rem;
+    width: 940px;
     margin: 0 auto;
     padding: 0;
 }
@@ -86,13 +86,13 @@ ol {
 }
 
 * {
-    /* outline: 1px solid red; */
+    /* outline: 0.0625rem solid red; */
 }
 
 /* header */
 
 .page-header {
-    padding: 50px 0 128px;
+    padding: 3.125rem 0 8rem;
 }
 
 .site-menu {
@@ -102,7 +102,7 @@ ol {
 }
 
 .logo {
-    margin-right: 22.75rem;
+    margin-right: 364px;
 }
 
 .site-navigation-link {
@@ -110,7 +110,7 @@ ol {
     text-transform: uppercase;
     font-family: "Montserrat";
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #222222;
 }
 
@@ -119,7 +119,7 @@ ol {
 }
 
 .site-navigation-item:not(:last-of-type) {
-    margin-right: 2.4rem;
+    margin-right: 38.4px;
 }
 
 .site-navigation-link:hover {
@@ -129,17 +129,17 @@ ol {
 /* section-services------------------------------------------------------ */
 
 .section-services {
-    padding-bottom: 6.375rem;
+    padding-bottom: 102px;
 }
 
 .section-title {
     text-transform: uppercase;
     font-family: "Montserrat";
     font-weight: 700;
-    font-style: 2.5rem;
+    font-style: 40px;
     color: #222222;
     text-align: center;
-    margin-bottom: 1.375rem;
+    margin-bottom: 22px;
 }
 
 .section-disc {
@@ -147,34 +147,34 @@ ol {
     text-align: center;
     font-family: "Roboto Slab";
     font-style: italic;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .services-list-item-title {
     font-family: "Montserrat";
-    font-style: 1.125rem;
-    font-size: 18px;
-    font-weight: 700px;
+    font-style: 18px;
+    font-size: 1.125rem;
+    font-weight: 43.75rem;
     color: #222222;
-    letter-spacing: -0.0281rem;
+    letter-spacing: -0.4496px;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .services-list-item-desc {
     font-family: "Roboto Slab";
-    font-size: 14px;
-    letter-spacing: -0.01rem;
+    font-size: 0.875rem;
+    letter-spacing: -0.16px;
     color: #777777;
-    line-height: 1.125rem;
-    padding-bottom: 16px;
+    line-height: 18px;
+    padding-bottom: 1rem;
 }
 
 .services-list-item {
-    width: 17.625rem;
+    width: 282px;
     text-align: center;
     background-repeat: no-repeat;
-    background-position: 20px 2px;
+    background-position: 1.25rem 0.125rem;
 }
 
 .services-list {
@@ -185,12 +185,12 @@ ol {
 .services-list-item::before {
     display: block;
     content: "";
-    width: 74px;
-    height: 74px;
+    width: 4.625rem;
+    height: 4.625rem;
     border-radius: 50%;
-    border: 3px solid #fed23a;
+    border: 0.1875rem solid #fed23a;
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -210,8 +210,8 @@ ol {
 /* form----------------------------------------------- */
 
 .section-form {
-    padding-top: 110px;
-    padding-bottom: 116px;
+    padding-top: 6.875rem;
+    padding-bottom: 7.25rem;
     background-color: #222222;
     background-repeat: no-repeat;
     background-position: right;
@@ -222,38 +222,39 @@ ol {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Montserrat";
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 1.375rem;
+    margin-bottom: 22px;
 }
 
 .contact-form {
-    width: 940px;
+    width: 58.75rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .contact-form_inputs {
-    width: 456px;
-    margin-right: 28px;
+    width: 28.5rem;
+    margin-right: 1.75rem;
 }
 
 .contact-form-input {
-    width: 456px;
-    height: 52px;
-    margin-bottom: 28px;
+    width: 28.5rem;
+    height: 3.25rem;
+    margin-bottom: 1.75rem;
     border: none;
-    border-radius: 2px;
-    padding: 20px;
+    border-radius: 0.125rem;
+    padding: 1.25rem;
 }
 
 .contact-form-input::placeholder,
 .contact-textarea::placeholder {
     text-transform: uppercase;
     font-family: "Montserrat";
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
+    color: #bbbbbb;
 }
 
 .contact-form-input::after {
@@ -262,25 +263,24 @@ ol {
 }
 
 .contact-textarea {
-    width: 456px;
+    width: 28.5rem;
     border: none;
-    border-radius: 2px;
-    height: 212px;
-    padding: 20px;
+    border-radius: 0.125rem;
+    height: 13.25rem;
+    padding: 1.25rem;
     resize: none;
 }
 
 .contact-btn {
-    width: 240px;
-    height: 70px;
-    padding: ;
+    width: 15rem;
     text-transform: uppercase;
     background-color: #fed136;
     color: #ffffff;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     font-family: "Montserrat";
     font-weight: 700;
     border: none;
+    padding: 1.625rem 0;
 }
 
 .contact-form-input:focus:valid {
