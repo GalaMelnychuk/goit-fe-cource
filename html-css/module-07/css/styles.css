@@ -210,6 +210,7 @@ ol {
 /* form----------------------------------------------- */
 
 .section-form {
+    padding-top: 110px;
     background-color: #222222;
     background-image: url(../img/back-graund/background_map.jpg);
 }
@@ -232,7 +233,7 @@ ol {
 
 .contact-form_inputs {
     width: 456px;
-    /* margin-right: 28px; */
+    margin-right: 28px;
 }
 
 .contact-form-input {
@@ -253,11 +254,11 @@ ol {
 }
 
 
-.contact-form-textarea {
-    width: 456px;
+.contact-textarea {
+    /* width: 456px; */
     border: none;
     border-radius: 2px;
-    height: 212px;
+    /* height: 212px; */
     padding: 20px;
     resize: none;
 }
