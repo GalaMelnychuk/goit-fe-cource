@@ -10,33 +10,75 @@
 
 <body>
     <header class="page-header container">
-            <nav class="site-menu">
-                <a href="#" class="logo">
-                    <img src="./img/Logo-Treehouse.png" alt="">
-                </a>
-                <ul class="site-navigation">
-                    <li class="site-navigation-item">
-                        <a class="site-navigation-link" href="#">home</a>
-                    </li>
-                    <li class="site-navigation-item">
-                        <a class="site-navigation-link" href="#">services</a>
-                    </li>
-                    <li class="site-navigation-item">
-                        <a class="site-navigation-link" href="#">portfolio</a>
-                    </li>
-                    <li class="site-navigation-item">
-                        <a class="site-navigation-link" href="#">about </a>
-                    </li>
-                    <li class="site-navigation-item">
-                        <a class="site-navigation-link" href="#">contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="site-menu">
+            <a href="#" class="logo">
+                <img src="./img/Logo-Treehouse.png" alt="">
+            </a>
+            <ul class="site-navigation">
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="#">home</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="#">services</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="#">portfolio</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="#">about </a>
+                </li>
+                <li class="site-navigation-item">
+                    <a class="site-navigation-link" href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="home-page-content">
-        <section class="section-services">
-            <h2 class="page-title">services</h2>
-            <p class="page-disc">Proin iaculis purus consequat sem cure.</p>
+        <section class="section-services container">
+            <h2 class="section-title">services</h2>
+            <p class="section-disc">Proin iaculis purus consequat sem cure.</p>
+            <ul class="services-list">
+                <li class="services-list-item commerce">
+                    <h3 class="services-list-item-title ">E-Commerce</h3>
+                    <p class="services-list-item-desc">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </li>
+                <li class="services-list-item responsive">
+                    <h3 class="services-list-item-title">Responsive Web</h3>
+                    <p class="services-list-item-desc">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </li>
+                <li class="services-list-item security">
+                    <h3 class="services-list-item-title">Web Security</h3>
+                    <p class="services-list-item-desc">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-form">
+            <div class="container">
+                <h2 class="section-form-title">contact us</h2>
+                <p class="section-disc">Proin iaculis purus consequat sem cure.</p>
+                <form action="#" class="contact-form">
+                    <div class="contact-form_inputs">
+                        <input type="text" class="contact-form-input" placeholder="your name" name="name" required>
+                        <input type="email" class="contact-form-input" placeholder="your e-mail" name="email" required>
+                        <input type="text" class="contact-form-input" placeholder="your subject" name="subject">
+                    </div>
+                    <div class="contact-form-textarea">
+                        <textarea name="message" class="contact-textarea" placeholder="your message"
+                            required></textarea>
+                    </div>
+                    <button class="contact-btn">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

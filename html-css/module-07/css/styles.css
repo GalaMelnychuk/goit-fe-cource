@@ -37,16 +37,6 @@
          url('../fonts/roboto-slab-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  /* loved-by-the-king-regular - latin */
-@font-face {
-    font-family: 'Loved by the King';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Loved by the King'), local('LovedbytheKing'),
-         url('../fonts/loved-by-the-king-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/loved-by-the-king-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
 html {
     box-sizing: border-box;
 }
@@ -96,7 +86,7 @@ ol {
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* header */
@@ -136,5 +126,150 @@ ol {
     color: #fed136;
 }
 
-/* section-services */
+/* section-services------------------------------------------------------ */
 
+.section-services {
+    padding-bottom: 6.375rem;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: 2.5rem;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 1.375rem;
+}
+
+.section-disc {
+    color: #777777;
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-style: italic;
+    margin-bottom: 80px;
+}
+
+.services-list-item-title {
+    font-family: "Montserrat";
+    font-style: 1.125rem;
+    font-size: 18px;
+    font-weight: 700px;
+    color: #222222;
+    letter-spacing: -0.0281rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.services-list-item-desc {
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    letter-spacing: -0.01rem;
+    color: #777777;
+    line-height: 1.125rem;
+    padding-bottom: 16px;
+}
+
+.services-list-item {
+    width: 17.625rem;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 20px 2px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list-item::before {
+    display: block;
+    content: "";
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 3px solid #fed23a;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.commerce::before {
+    background-image: url(../img/Icon-Basket.png);
+}
+
+.responsive::before {
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.security::before {
+    background-image: url(../img/Icon-Locked.png);
+}
+
+/* form----------------------------------------------- */
+
+.section-form {
+    background-color: #222222;
+    background-image: url(../img/back-graund/background_map.jpg);
+}
+
+.section-form-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1.375rem;
+}
+
+.contact-form {
+    /* width: 940px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-form_inputs {
+    width: 456px;
+    /* margin-right: 28px; */
+}
+
+.contact-form-input {
+    width: 456px;
+    height: 52px;
+    margin-bottom: 28px;
+    border: none;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.contact-form-input::placeholder,
+.contact-textarea::placeholder {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.contact-form-textarea {
+    width: 456px;
+    border: none;
+    border-radius: 2px;
+    height: 212px;
+    padding: 20px;
+    resize: none;
+}
+
+.contact-btn {
+    width: 240px;
+    height: 70px;
+    padding: ;
+    text-transform: uppercase;
+    background-color: #fed136;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border: none;
+}
