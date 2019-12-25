@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .container {
         width: 660px;
     }
@@ -29,8 +29,6 @@
         margin: 0;
     }
 
- 
-
     .section-holiday {
         padding-top: 128px;
         /* padding-bottom: 232px; */
@@ -48,6 +46,37 @@
         margin-bottom: 32px;
     }
 
+    .partners-list-title {
+        margin-bottom: 32px;
+    }
+
+    .partners-list {
+        margin: 0 auto;
+        display: flex;
+        width: 520px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+
+    .partners-list-item {
+        margin-bottom: 54px;
+    }
+
+    .partners-list-item:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+
+    .partner_2 {
+        order: 1;
+    }
+
+    .partner_4 {
+        order: 2;
+    }
+
+
+
 }
 
 @media (min-width: 939px) {
@@ -57,4 +86,7 @@
 
     .main-background {
         background-image: url(../img/backgrounds/background_desktop.jpg);
+    }
+
+    
     }

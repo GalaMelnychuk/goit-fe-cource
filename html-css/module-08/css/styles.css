@@ -209,6 +209,10 @@ ol {
     padding-top: 70px;
 }
 
+.partners-list {
+    margin-bottom: 28px;
+}
+
 .partners-list-title {
     font-family: "Montserrat";
     font-weight: 700;
@@ -247,6 +251,10 @@ ol {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 28px;
+}
+
+.partners-list-item:last-child {
+    margin-bottom: 0;
 }
   
 .partners-item-img::after {
