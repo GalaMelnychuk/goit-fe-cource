@@ -1,0 +1,204 @@
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    margin: -0.0625rem;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+* {
+    /* outline: 0.0625rem solid red; */
+}
+
+/* header------------------------------------------------------------ */
+
+.main-background {
+    background-image: url(../img/background_img.png);
+    background-color: rgb(26, 25, 21);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.page-header {
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+
+.logo-link-box {
+    display: none;
+}
+
+.bts {
+    text-align: center;
+    margin-bottom: 116px;
+}
+
+.buttons {
+    background-color: inherit;
+    width: 90px;
+    height: 40px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+}
+
+.logo-link-small-device-box {
+    text-align: center;
+}
+
+.logo-link-small-device {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* SECTION HOLIDAY ------------------------------------------------- */
+
+.section-holiday {
+    padding-top: 18px;
+    padding-bottom: 138px;
+}
+
+.section-holiday-title {
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    width: 292px;
+    margin-bottom: 16px;
+}
+
+.section-holiday-desc {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    width: 220px;
+    margin-bottom: 16px;
+}
+
+.holiday-link-box {
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    padding: 10px 44px;
+    margin: 0 auto;
+}
+
+.holiday-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.holiday-link-box:hover .holiday-link {
+    color: #ff4e50;
+}
+
+.holiday-link-box:hover {
+    background-color: #ffffff;
+    border: 2px solid #ff4e50;
+}
