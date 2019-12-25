@@ -31,7 +31,6 @@
 
     .section-holiday {
         padding-top: 128px;
-        /* padding-bottom: 232px; */
     }
 
     .section-holiday-title {
@@ -75,8 +74,6 @@
         order: 2;
     }
 
-
-
 }
 
 @media (min-width: 939px) {
@@ -88,5 +85,11 @@
         background-image: url(../img/backgrounds/background_desktop.jpg);
     }
 
-    
+    .partners-list-item {
+        margin: 0;
     }
+
+    .partners-list {
+        width: 942px
+    }
+}
