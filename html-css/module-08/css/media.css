@@ -45,6 +45,10 @@
         margin-bottom: 32px;
     }
 
+    .section-partners {
+        margin-bottom: 38px;
+    }
+
     .partners-list-title {
         margin-bottom: 32px;
     }
@@ -83,6 +87,10 @@
 
     .main-background {
         background-image: url(../img/backgrounds/background_desktop.jpg);
+    }
+
+    .section-partners {
+        margin-bottom: 72px;
     }
 
     .partners-list-item {

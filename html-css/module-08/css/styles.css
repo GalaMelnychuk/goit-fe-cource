@@ -207,6 +207,7 @@ ol {
 
 .section-partners {
     padding-top: 70px;
+    padding-bottom: 56px;
 }
 
 .partners-list {
@@ -291,6 +292,6 @@ ol {
 }
 
 
-.section-partners-box {
+.partners-link-box {
     text-align: center;
 }
