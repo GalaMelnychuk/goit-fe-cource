@@ -84,16 +84,15 @@ ol {
 }
 
 * {
-    /* outline: 0.0625rem solid red; */
+    outline: 0.0625rem solid red;
 }
 
 /* header------------------------------------------------------------ */
 
 .main-background {
-    background-image: url(../img/background_img.png);
-    background-color: rgb(26, 25, 21);
+    background-image: url(../img/backgrounds/background_phone.jpg);
     background-position: center;
-    object-fit: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -114,7 +113,7 @@ ol {
 .buttons {
     background-color: inherit;
     width: 90px;
-    height: 40px;
+    padding: 10px 15px;
     color: #ffffff;
     font-family: "Montserrat";
     font-size: 14px;
@@ -134,7 +133,8 @@ ol {
     text-align: center;
 }
 
-.logo-link-small-device {
+.logo-link-small-device,
+.logo-link {
     text-decoration: none;
     color: #ffffff;
     font-family: "Montserrat";

@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+    .container {
+        width: 660px;
+    }
+
+    .main-background {
+        background-image: url(../img/backgrounds/backgraund_tablet.jpg);
+    }
+
+    .page-header {
+        padding-top: 38px;
+    }
+
+    .logo-link-box {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .logo-link-small-device-box {
+        display: none;
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bts {
+        margin: 0;
+    }
+
+    /* SECTION HOLIDAY ------------------------------------------------- */
+
+    .section-holiday {
+        padding-top: 128px;
+        /* padding-bottom: 232px; */
+    }
+
+    .section-holiday-title {
+        width: 504px;
+        font-size: 52px;
+        margin-bottom: 54px;
+    }
+
+    .section-holiday-desc {
+        width: 406px;
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
