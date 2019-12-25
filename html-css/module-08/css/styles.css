@@ -84,10 +84,10 @@ ol {
 }
 
 * {
-    outline: 0.0625rem solid red;
+    /* outline: 0.0625rem solid red; */
 }
 
-/* header------------------------------------------------------------ */
+/* header */
 
 .main-background {
     background-image: url(../img/backgrounds/background_phone.jpg);
@@ -146,7 +146,7 @@ ol {
     cursor: pointer;
 }
 
-/* SECTION HOLIDAY ------------------------------------------------- */
+/* holiday */
 
 .section-holiday {
     padding-top: 18px;
@@ -201,4 +201,88 @@ ol {
 .holiday-link-box:hover {
     background-color: #ffffff;
     border: 2px solid #ff4e50;
+}
+
+/* partners */
+
+.section-partners {
+    padding-top: 70px;
+}
+
+.partners-list-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.partners-item-img {
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.partners-name {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.partners-about {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.partners-list-item {
+    width: 214px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+  
+.partners-item-img::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.tv-1::after{
+    background-image: url(../img/icons/tv-1.png);
+    background-color: #ff4e50;
+}
+
+.bottle-2::after {
+    background-image: url(../img/icons/bottle-2.png);
+    background-color: #ffa507;
+}
+
+.cup-3::after {
+    background-image: url(../img/icons/cup-3.png);
+    background-color: #1cd7ad;
+}
+
+.teleg-4::after {
+    background-image: url(../img/icons/teleg-4.png);
+    background-color: rgb(78, 115, 219);
+}
+
+
+.section-partners-box {
+    text-align: center;
 }
