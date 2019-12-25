@@ -176,22 +176,27 @@ ol {
     margin-bottom: 16px;
 }
 
-.holiday-link-box {
+.holiday-link-box,
+.partners-link-box {
     width: 280px;
     height: 40px;
     background-color: #ff4e50;
     border-radius: 20px;
-    padding: 10px 44px;
     margin: 0 auto;
 }
 
-.holiday-link {
+.holiday-link,
+.partners-link {
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
     font-family: "Montserrat";
     font-weight: 700;
     cursor: pointer;
+}
+
+.holiday-link-box {
+    padding: 10px 44px;
 }
 
 .holiday-link-box:hover .holiday-link {
@@ -291,7 +296,16 @@ ol {
     background-color: rgb(78, 115, 219);
 }
 
-
 .partners-link-box {
     text-align: center;
+    padding: 10px 70px;
+}
+
+.partners-link-box:hover .partners-link {
+    color: #ff4e50;
+}
+
+.partners-link-box:hover {
+    background-color: #ffffff;
+    border: 2px solid #ff4e50;
 }

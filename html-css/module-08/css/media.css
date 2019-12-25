@@ -46,7 +46,7 @@
     }
 
     .section-partners {
-        margin-bottom: 38px;
+        padding-bottom: 38px;
     }
 
     .partners-list-title {
@@ -78,6 +78,11 @@
         order: 2;
     }
 
+    .partners-link-box {
+        text-align: center;
+        padding: 10px 28px;
+    }
+
 }
 
 @media (min-width: 939px) {
@@ -90,8 +95,8 @@
     }
 
     .section-partners {
-        margin-bottom: 72px;
-    }
+        padding-bottom: 72px;
+        }
 
     .partners-list-item {
         margin: 0;
