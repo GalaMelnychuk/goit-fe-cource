@@ -1,205 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
-    <!-- Сюда будет всталена ссылка на файл стилей -->
-    <!-- inject:css -->
-    <!-- endinject -->
-  </head>
 
-  <body>
-    <div class="main-background">
-      <header class="page-header">
-          <div class="container">
-              <div class="logo-link">
-                  <a href="#" class="logo">MoGo</a>
-              </div>
-              <nav class="site-menu">
-                  <ul class="site-nav">
-                      <li class="site-nav-item">
-                          <a class="site-nav-link" href="#">about</a>
-                      </li>
-                      <li class="site-nav-item">
-                          <a class="site-nav-link" href="#">service</a>
-                      </li>
-                      <li class="site-nav-item">
-                          <a class="site-nav-link" href="#">work</a>
-                      </li>
-                      <li class="site-nav-item">
-                          <a class="site-nav-link" href="#">blog</a>
-                      </li>
-                      <li class="site-nav-item">
-                          <a class="site-nav-link" href="#">contact</a>
-                      </li>
-                  </ul>
-                  <ul class="helper-nav">
-                      <li class="helper-item">
-                          <button class="helper-btn">
-                              <svg class="helper--svg">
-                                  <use href="./images/social-icons/sprite.svg#icon-shopping"></use>
-                              </svg>
-                          </button>
-                      </li>
-                      <li class="helper-item">
-                          <button class="helper-btn">
-                              <svg class="helper--svg">
-                                  <use href="./images/social-icons/sprite.svg#icon-searching"></use>
-                              </svg>
-                          </button>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
-      </header>
-      <section class="wellcome-page">
-          <h1 class="page-title">Creative Template</h1>
-          <h2 class="slogan">Welcome to MoGo</h2>
-          <div class="learn-more-link-box">
-              <a href="#" class="learn-more-link">Learn more</a>
-          </div>
-      </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    <title>Gala-module-11</title>
+</head>
+
+<body>
+    <div class="main-background-container">
+        <header class="page-header container">
+            <div class="site-logo">
+                <a href="#" class="site-logo__link">MoGo</a>
+            </div>
+            <nav class="site-menu">
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">about</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">service</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">work</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">blog</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">contact</a>
+                    </li>
+                </ul>
+                <ul class="site-helpers">
+                    <li class="site-helpers__item">
+                        <button class="site-helpers__btn">
+                            <svg class="site-helpers__svg">
+                                <use href="./img/social-icons/sprite.svg#icon-shopping"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="site-helpers__item">
+                        <button class="site-helpers__btn">
+                            <svg class="site-helpers__svg">
+                                <use href="./img/social-icons/sprite.svg#icon-searching"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <section class="welcome-page container">
+        <h1 class="welcome-page__title">Creative Template</h1>
+        <h2 class="welcome-page__slogan">Welcome to MoGo</h2>
+        <div class="welcome-page__btn">
+            <a href="#" class="welcome-page__link">Learn more</a>
+        </div>
+    </section>
     </div>
+
     <main>
-      <section class="services container">
-          <h1 class="visually-hidden">About Mogo Company</h1>
-          <h2 class="section-title"><span class="section-title-prefix">We work with</span>
-              Amazing Services</h2>
-          <ul class="services-list">
-              <li class="services-list-item photography">
-                  <h3 class="services-list-item-title ">photography</h3>
-                  <p class="services-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor.</p>
-              </li>
-              <li class="services-list-item web-design">
-                  <h3 class="services-list-item-title">Web Design</h3>
-                  <p class="services-list-item-desc">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor.</p>
-              </li>
-              <li class="services-list-item creativity">
-                  <h3 class="services-list-item-title">Creativity</h3>
-                  <p class="services-list-item-desc">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor.</p>
-              </li>
-              <li class="services-list-item seo">
-                  <h3 class="services-list-item-title">seo</h3>
-                  <p class="services-list-item-desc">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod.</p>
-              </li>
-              <li class="services-list-item css-html">
-                  <h3 class="services-list-item-title">Css/Html</h3>
-                  <p class="services-list-item-desc">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
-                  </p>
-              </li>
-              <li class="services-list-item digital">
-                  <h3 class="services-list-item-title">digital</h3>
-                  <p class="services-list-item-desc">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              </li>
-          </ul>
-      </section>
-      <section class="team container">
-          <h2 class="section-title team-section"><span class="section-title-prefix">Who we are</span>
-              Meet our team</h2>
-          <p class="team-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <ul class="team-list">
-              <li class="team-list-item">
-                  <div class="team-list-item-overlay">
-                      <img src="./images/team/team-member-1.jpg" alt="team-member-1" class="team-member-img">
-                      <div class="overlay-wrapper">
-                          <ul class="overlay-social">
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-facebook" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-instagram" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-pinterest" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-twitter" href="#"></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="team-list-item-member">
-                      <h4 class="team-list-item-name">Matthew Dix</h4>
-                      <p class="team-list-item-position">Graphic Design</p>
-                  </div>
-              </li>
-              <li class="team-list-item">
-                  <div class="team-list-item-overlay">
-                      <img src="./images/team/team-member-2.jpg" alt="team-member-2" class="team-member-img">
-                      <div class="overlay-wrapper">
-                          <ul class="overlay-social">
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-facebook" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-instagram" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-pinterest" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-twitter" href="#"></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="team-list-item-member">
-                      <h4 class="team-list-item-name">Christopher Campbell</h4>
-                      <p class="team-list-item-position">Branding/UX design</p>
-                  </div>
-              </li>
-              <li class="team-list-item">
-                  <div class="team-list-item-overlay">
-                      <img src="./images/team/team-member-3.jpg" alt="team-member-3" class="team-member-img">
-                      <div class="overlay-wrapper">
-                          <ul class="overlay-social">
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-facebook" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-instagram" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-pinterest" href="#"></a>
-                              </li>
-                              <li class="overlay-social-link">
-                                  <a class="overlay-list-item-link icon-twitter" href="#"></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="team-list-item-member">
-                      <h4 class="team-list-item-name">Michael Fertig</h4>
-                      <p class="team-list-item-position">Developer</p>
-                  </div>
-              </li>
-          </ul>
-      </section>
+        <section class="section-services container">
+            <h1 class="visually-hidden">About Mogo Company</h1>
+            <h2 class="section-services__title"><span class="section-services__title-prefix">We work with</span>
+                Amazing Services</h2>
+            <ul class="section-services__list">
+                <li class="section-services__item photography">
+                    <h3 class="section-services__item-title ">photography</h3>
+                    <p class="section-services__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
+                </li>
+                <li class="section-services__item web-design">
+                    <h3 class="section-services__item-title">Web Design</h3>
+                    <p class="section-services__item-desc">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.</p>
+                </li>
+                <li class="section-services__item creativity">
+                    <h3 class="section-services__item-title">Creativity</h3>
+                    <p class="section-services__item-desc">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor.</p>
+                </li>
+                <li class="section-services__item seo">
+                    <h3 class="section-services__item-title">seo</h3>
+                    <p class="section-services__item-desc">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod.</p>
+                </li>
+                <li class="section-services__item css-html">
+                    <h3 class="section-services__item-title">Css/Html</h3>
+                    <p class="section-services__item-desc">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                    </p>
+                </li>
+                <li class="section-services__item digital">
+                    <h3 class="section-services__item-title">digital</h3>
+                    <p class="section-services__item-desc">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="section-team container">
+            <h2 class="section-team__title team-section"><span class="section-team__title-prefix">Who we are</span>
+                Meet our team</h2>
+            <p class="section-team__desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <ul class="section-team__list">
+                <li class="section-team__item">
+                    <div class="section-team__item-overlay">
+                        <img src="./img/team/team-member-1.jpg" alt="team-member-1" class="section-team__img">
+                        <div class="section-team__overlay-social">
+                            <ul class="section-team__social-list">
+                                <li class="section-team__social-item">
+                                    <a class="section-team__social-link icon-facebook" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="section-team__social-link icon-instagram" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="section-team__social-link icon-pinterest" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="section-team__social-link icon-twitter" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-team__member">
+                        <h4 class="section-team__member-name">Matthew Dix</h4>
+                        <p class="section-team__member-position">Graphic Design</p>
+                    </div>
+                </li>
+                <li class="section-team__item">
+                    <div class="section-team__item-overlay">
+                        <img src="./img/team/team-member-2.jpg" alt="team-member-2" class="section-team__img">
+                        <div class="section-team__overlay-social">
+                            <ul class="section-team__social-list">
+                                <li class="section-team__social-item">
+                                    <a class="section-team__social-link icon-facebook" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="osection-team__social-link icon-instagram" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="section-team__social-link icon-pinterest" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="section-team__social-link icon-twitter" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-team__member">
+                        <h4 class="section-team__member-name">Christopher Campbell</h4>
+                        <p class="section-team__member-position">Branding/UX design</p>
+                    </div>
+                </li>
+                <li class="section-team__item">
+                    <div class="section-team__item-overlay">
+                        <img src="./img/team/team-member-3.jpg" alt="team-member-3" class="section-team__img">
+                        <div class="section-team__overlay-social">
+                            <ul class="section-team__social-list">
+                                <li class="section-team__social-item">
+                                    <a class="overlay-list-item-link icon-facebook" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="overlay-list-item-link icon-instagram" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="overlay-list-item-link icon-pinterest" href="#"></a>
+                                </li>
+                                <li class="section-team__social-item">
+                                    <a class="overlay-list-item-link icon-twitter" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-team__member">
+                        <h4 class="section-team__member-name">Michael Fertig</h4>
+                        <p class="section-team__member-position">Developer</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
-    <footer>
-      <footer>
-          <div class="page-footer container">
-              <p class="copyright">© 2016 MoGo free PSD template by
-                  <a class="copyright-link" href="#">Laaqiq</a>
-              </p>
-              <form class="contact-email" action="#">
-                  <input class="contact-email-placeholder" type="email" placeholder="Your Email..." name="email">
-                  <button class="btn-subscribe" type="submit">Subscribe</button>
-              </form>
-          </div>
-      </footer>
+
+    <footer class="page-footer">
+        <div class="page-footer__container container">
+            <p class="page-footer__copyright">© 2016 MoGo free PSD template by
+                <a class="page-footer__link" href="#">Laaqiq</a>
+            </p>
+            <form class="page-footer__contact-form" action="#">
+                <input class="page-footer__input" type="email" placeholder="Your Email..." name="email">
+                <button class="page-footer__btn-subscribe" type="submit">Subscribe</button>
+            </form>
+        </div>
     </footer>
-      
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
-  </body>
+
+</body>
+
 </html>
