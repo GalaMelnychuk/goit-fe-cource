@@ -42,12 +42,14 @@ input[type="radio"].visually-hidden {
   height: auto;
 }
 
-.list {
+ul,
+ol {
 list-style: none;
 }
 
-.link {
+a {
 text-decoration: none;
+display: block;
 }
 
 .button {
