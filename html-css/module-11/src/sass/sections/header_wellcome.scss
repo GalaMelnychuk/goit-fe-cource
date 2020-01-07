@@ -10,7 +10,7 @@
 }
 
 .page-header {
-  padding: 40px 0 122px;
+  padding-top: 40px;
   justify-content: space-between;
   display: flex;
 }
@@ -81,7 +81,7 @@
 
 .welcome-page {
   padding-top: 183px;
-  max-width: 810px;
+  width: 834px;
 
   &__title {
     @extend %title;
